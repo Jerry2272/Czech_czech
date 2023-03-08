@@ -429,6 +429,12 @@ footer {
 
 
 @media (min-width: 992px) {
+    body.activer {
+    background: darkred;
+    color: rgb(4, 8, 223);
+    /* font-family: cursive; */
+    font-family: 'Symbol';
+}
     .label_check {
         position: fixed;
         text-align: center;
@@ -504,6 +510,7 @@ footer {
         background-repeat: no-repeat;
         padding-top: 9em;
     }
+    
     /* #last{
     position: fixed;
     bottom: 0;
@@ -520,7 +527,12 @@ footer {
 
 
 @media (max-width: 768px) {
-
+body.activer {
+    background: darkred;
+    color: rgb(4, 8, 223);
+    /* font-family: cursive; */
+    font-family: 'Symbol';
+}
     #inves {
         margin-left: auto;
 
@@ -596,6 +608,12 @@ footer {
 
 
 @media (max-width: 576px) {
+    body.activer {
+    background: darkred;
+    color: rgb(4, 8, 223);
+    /* font-family: cursive; */
+    font-family: 'Symbol';
+}
     .dropdowner li {
         background: #fff;
         padding: 20px;
