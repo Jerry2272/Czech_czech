@@ -1,0 +1,756 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #f5efef;
+    color: #0a1a49;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 1.875rem;
+    line-height: 1.1;
+    color: #0a1a49;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+body.active {
+    color: darkorange;
+    transition: all 0.55s ease-in-out;
+    font-weight: 900;
+}
+
+body.activer {
+    background: darkred;
+    color: rgb(4, 8, 223);
+    /* font-family: cursive; */
+    font-family: 'Symbol';
+}
+
+/* label.active{
+    background: darkred;
+    content: "rice#stew";
+    position: absolute;
+    transform: rotate(30deg);
+    color: #fff;
+} */
+a {
+    text-decoration: none;
+    color: #db1548;
+    transition: all 1.35 s ease-in;
+}
+
+a:hover {
+    color: #ba123d;
+    text-decoration: overline;
+    transition: all 1s ease-in;
+}
+
+.nav-link:hover {
+    color: red;
+    font-weight: 400;
+}
+
+.navbar {
+    border-bottom: 2px solid rgb(176, 189, 189);
+    background: #fff;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.dropdow {
+    position: relative;
+    line-height: 2em;
+}
+
+.dropdow li,
+.dropdowner {
+    display: none;
+    /* transition: all 1s ease-in; */
+
+}
+
+.dropdow .dropdown-toggle:hover {
+    color: red;
+}
+
+.dropdow:hover li,
+.dropdowner {
+    display: block;
+    transition: all .40s ease-in;
+}
+
+.fa-angle-down {
+    color: red;
+}
+
+.fa-angle-down:hover {
+    transform: rotate(180deg);
+    transition: all 1s ease;
+}
+
+.dropdowner li {
+    position: absolute;
+    background: #fff;
+    padding: 10px 39px;
+    /* box-shadow: 0px 0px 1px 2px #fff; */
+    padding-right: 40px;
+    left: 0;
+    right: 0;
+    top: 3em;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    padding: 10px 25px;
+    background: red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+label::before {
+    position: absolute;
+    padding: 10px 10px;
+    background: lightgrey;
+    content: '';
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+}
+
+#check:checked+label::before {
+    left: 30px;
+    background: darkolivegreen;
+}
+
+#check:checked+label {
+    background: lightgreen;
+}
+
+.nav_ite .nav-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* .navbar-nav .nav-item a{
+  : 700;
+} */
+#c_fund {
+    position: relative;
+}
+
+#c_fund::before {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+    content: '';
+    transform: translateY(19px);
+    left: -10px;
+}
+
+.btn_invest {
+    padding: 16px 36px;
+    background: #db1548;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.img_banner {
+    height: 340px;
+    object-fit: cover;
+    /* backdrop-filter: (blur); */
+}
+
+#hero h1 {
+    padding-top: 1em;
+}
+
+.empty_div h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 0.86em;
+    color: #fff;
+
+    margin-top: -40px;
+    position: relative;
+    z-index: -1;
+}
+
+/* #duck.activer{
+    background: green;
+} */
+/* .invest_bg{
+    background: url("..//image/czechfund_.png");
+    height: 110vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer {
+    background: #0a1a49;
+    padding: 40px;
+    color: #fff;
+    margin-top: 6em;
+    padding-top: 4em;
+}
+
+footer a {
+    color: #fff;
+}
+
+.img_side {
+    position: relative;
+    padding-top: 4em;
+}
+
+.img_side::before {
+    content: '';
+    top: 0.90em;
+    position: absolute;
+    width: 540px;
+
+    height: 370px;
+    background: #fff;
+    z-index: -1;
+}
+
+.carousel-control-prev-icon {
+    color: red;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 3em;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    padding: 0;
+    height: 50px;
+    color: red;
+    text-align: center;
+    background: #fff;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.benefit_ico {
+    position: relative;
+    /* display: inline-flex; */
+}
+
+.benefit_icon img {
+    position: absolute;
+    /* top: 0; */
+    /* right: 3em; */
+    left: 110%;
+    transform: translateY(-50%);
+    display: none;
+    /* float: end; */
+    /* bottom: 0; */
+    width: 100px;
+    height: 50px;
+}
+
+.icon_benefit {
+    border: 7px solid #f5efef;
+}
+
+.icons_social i {
+    padding: 10px 10px;
+    background: #343947;
+    margin-left: 7px;
+}
+
+.icons_social {
+    margin-top: 2em;
+}
+
+.fa_solid {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    font-size: 40px;
+    transform: translateY(-10px);
+    color: #db1548;
+}
+
+#real_estate ul {
+    list-style: georgian;
+    /* list-style-type: lower-greek; */
+    /* list-style-type: color; */
+}
+
+.info_bg {
+    height: 110vh;
+    background: url("..//image/czechfund_.png");
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 9em;
+}
+
+/* section{
+    padding-top: 9em;
+} */
+#invest_fund {
+    margin-top: 12em;
+}
+
+footer {
+    max-width: 1400px;
+    margin-bottom: 0;
+}
+.fa-magnifying-glass{
+    color:#db1548;
+}
+.form_drop{
+    position: absolute;
+    right: 0;
+    background: #fefefe;
+    padding: 12px 33px;
+}
+.btn_search{
+    padding: 10px 15px;
+    background: #db1548;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 14px;
+    transition: all  0.67s step-end;
+}
+/* .form_drop::before{
+ content:'';
+ background: #fff;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 100%;
+ height: 200px;
+ z-index: -1;
+} */
+.form_input{
+    width: 130px;
+    border: 0;
+}
+#last{
+    position: fixed;
+    /* right: 0; */
+    bottom: 0;
+    right: -26%;
+    transition: right 0.55s ease-in;
+}
+#last:hover{
+    right: 0;
+}
+#last:hover .wap{
+    display: none;
+}
+#last a{
+    font-size: 11px;
+    /* background-color: #8f929b; */
+}
+#last i{
+    color:rgb(4, 8, 223);
+}
+.last{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.last_pp{
+    background:rgb(155, 156, 240);
+    height: 100px;
+    width: 260px;
+    padding-left: 60px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+.fa-hands-holding-circle{
+    font-size: 50px;
+    overflow: hidden;
+}
+.fa-hands-holding-circle:hover{
+    scale: 1.5;
+}
+.fa-spinner{
+    font-size: 30px;
+    animation-name: spine;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 0.55s;
+    transition: all 0.75s ease-in-out;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .label_check {
+        position: fixed;
+        text-align: center;
+        top: 90px;
+        right: 5em;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+        font-weight: 900 !important;
+        line-height: 1em;
+        color: darkslategray;
+    }
+
+    #fund {
+        padding-left: 0.55em;
+    }
+
+    .empty_div h1 {
+        padding-left: 6em;
+    }
+
+    #real_estate {
+        margin-top: -37px;
+    }
+
+    .foot_brand {
+        display: flex;
+    }
+
+    .navband_ul {
+        margin-left: 45px;
+
+    }
+
+    .navband_ul li {
+        line-height: 22px;
+    }
+
+    #navB {
+        margin-left: 32px;
+        line-height: 18px;
+    }
+
+    .foot_brand {
+        display: flex;
+    }
+
+    .funds h1 {
+        /* width: 300px; */
+        font-weight: 700;
+    }
+
+    .funds p {
+        font-size: 14px;
+        width: 350px;
+    }
+
+    .img_side::before {
+        right: -20px;
+    }
+
+    .fle {
+        padding-top: 20px;
+        margin-top: 15px;
+    }
+
+    .info_bg {
+        height: 110vh;
+        background: url("..//image/czechfund_.png");
+        /* background-position: center; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 9em;
+    }
+    /* #last{
+    position: fixed;
+    bottom: 0;
+    right: -18em;
+    transition: right 0.55s ease-in;
+}
+#last:hover{
+    right: 0;
+} */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    #inves {
+        margin-left: auto;
+
+    }
+
+    .navband_ul li {
+        line-height: 22px;
+    }
+
+    #navB {
+        margin-left: auto;
+        line-height: 18px;
+        margin-right: 40px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .foot_brand {
+        display: flex;
+    }
+
+    .img_side::before {
+        right: 0px;
+    }
+
+    .fle {
+        padding-top: 40px;
+        margin-top: 15px;
+    }
+    #real_estate{margin-top: 5em;}
+    #real_estate ul li {
+        line-height: 1.1em;
+    }
+
+    .info_bg {
+        height: 110vh;
+        background: url("..//image/czechfund_.png");
+        /* background-position: center; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 9em;
+    }
+
+    #travel {
+        margin-top: 12em;
+    }
+
+    #advantage {
+        margin-top: -14em;
+        padding-top: 0em;
+        margin-bottom: 12em;
+    }
+    #last{
+        position: fixed;
+        /* right: 0; */
+        bottom: 0;
+        right: -16em;
+        transition: right 0.55s ease-in;
+    }
+    #last:hover{
+        right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .dropdowner li {
+        background: #fff;
+        padding: 20px;
+        /* top: 0; */
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown li,
+    .dropdowner {
+        display: none;
+
+    }
+
+    .dropdown:hover li,
+    .dropdowner {
+        display: block;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .dropdowner a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .label_check {
+        position: fixed;
+        text-align: center;
+        top: 90px;
+        right: 5em;
+    }
+
+    /* .invest_bg{
+        background: linear-gradient(rgba(15, 14, 14,0.1), rgba(14, 12, 12,0.2)), url("..//image/czechfund_.png");
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 90px;
+    }*/
+    #navband {
+        text-align: center;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        font-size: 40px !important;
+        line-height: 0.95em;
+        padding-bottom: 1.40em;
+    }
+
+    .navband_ul {
+        padding-top: 2em;
+    }
+
+    .div_span {
+        display: flex;
+        gap: 9px;
+    }
+
+    #navB {
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        text-align: start;
+    }
+
+    .img_side::before {
+        right: 0px;
+    }
+
+    .navbar-toggler {
+        background: none;
+        color: #db1548;
+
+    }
+
+    .navbar-toggler-icon {
+        border: none;
+        color: #db1548;
+    }
+
+    button .navbar-toggler-icon:hover {
+        border: none;
+    }
+
+    #advantage {
+        padding-top: 0em;
+        margin-top: 0em;
+    }
+
+    #travel {
+        margin-bottom: -28em;
+        /* padding-bottom: 9em; */
+    }
+    /* .btn_invest{
+        margin-bottom: 22px;
+    } */
+
+    .foot_brand {
+        display: block;
+    }
+    #last{
+        position: fixed;
+        /* right: 0; */
+        bottom: 0;
+        right: -16.26em;
+        transition: right 0.55s ease-in;
+    }
+    #last:hover{
+        right: 0;
+    }
+}
+
+
+@media (max-width: 992px){
+    #travel{
+        margin-top: 12em;
+    }
+     #advantage{
+        margin-bottom: 15em;
+        margin-top: -28em;
+     }
+}
+
+@keyframes spine{
+    0%{
+         transform: rotate(0deg);
+         color: red;
+    }
+    25%{
+         transform: rotate(25deg);
+         color: green;
+    }
+    45%{
+         transform: rotate(45deg);
+         color: white;
+    }
+    65%{
+         transform: rotate(65deg);
+         color: darkgoldenrod;
+    }
+    75%{
+         transform: rotate(75deg);
+         color: white;
+    }
+    85%{
+         transform: rotate(85deg);
+         color: darkred;
+    }
+    100%{
+         transform: rotate(100deg);
+         color: white;
+    }
+}
