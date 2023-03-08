@@ -711,10 +711,28 @@ footer {
     #last:hover{
         right: 0;
     }
-    .fa-magnifying-glass{
-        margin-left: auto;
+   .nav_spine a{
+        /* position: relative; */
         text-align: end;
-        color: blue;
+        width: 50px;
+        margin-left: auto;
+    }
+    .free{
+        margin-bottom: 3em;
+    }
+    #diop{
+        margin-top: 1em;
+    }
+    .nav_j{
+        margin-top: 1em;
+    }
+    .form-control:focus{
+        width: 100%;
+    }
+    .form-control{
+        width: 100px;
+        transition: width 1.25s ease;
+    }
 }
 
 
