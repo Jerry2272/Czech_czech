@@ -711,6 +711,9 @@ footer {
     #last:hover{
         right: 0;
     }
+    .fa-magnifying-glass{
+        margin-left: auto;
+        text-align: end;
 }
 
 
