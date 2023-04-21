@@ -12,11 +12,26 @@
   <title>Czeech</title>
   <link rel="shortcut Icon" type="Image/png" href="image/favicon.png">
   <style>
+
+@media (max-width: 768px){
+  .nav_spine a{
+        /* position: relative; */
+        text-align: start;
+        width: 50px;
+        margin-right: auto;
+    }
+      #diop{
+        margin-top: 1em;
+    }
+    
+  }
     @media (max-width: 576px){
       .fa-magnifying-glass{
         margin-left: auto;
         text-align: end;
     }
+  }
+  
   </style>
 </head>
 
@@ -53,7 +68,7 @@
                 aria-current="page" href="#" role="button" data-bs-toggle="dropdown">
                 <span><i class="fa-sharp fa-solid fa-globe text-danger"></i></span> enlish
               </a>
-              <ul class="dropdowner" id="down">
+              <ul class="dropdowner mb-md-4" id="down">
                 <li>
                   <a href="#" id="language">Espano</a>
                 </li>
